@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      background: green;
+      transition-property: width height;
+      /* Pode especificar o quer mudar ou pode usar a tag "all", assim, todos os elementos que tiverem alguma mudança no efeito hover, vão ser alterados */
+      transition-duration: 1s;
+      /* Duração em segundos da transição */
+      transition-timing-function: linear;
+      /* Tipo de transição */
+      transition-delay: 1s;
+
+      /* Ou usar o atalho */
+      /* transition: all 1s linear 1s; */
+    }
+    div:hover {
+      width: 200px;
+      height: 200px;
+      background: blue;
+    }
+  </style>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profundidade</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      background: green;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      /* z-index define o nivel de profundidade da pagina. Lembrando que todos os elementos html por padrão tem profundidade 1. Caso deseje que fique atras dos elementos, deverá usar -1. E atrás dos elementos -1, os elementos -2, e etc*/
+      /* Atenção: O z-index só funciona com elementos com um posicionamento definido. Sem isso, não vai funcionar */
+    }
+  </style>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero quis
+      vel odio ipsam rerum perferendis eligendi aut dignissimos! At excepturi
+      voluptatibus corrupti! Architecto, aperiam. Repudiandae porro modi
+      similique quas.
+    </h1>
+    <div></div>
+  </body>
+</html>

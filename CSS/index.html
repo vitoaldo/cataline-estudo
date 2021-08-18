@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina CSS</title>
+    <style>
+      @font-face {
+        font-family: HarryPotter;
+        src: url("../Fontes/HARRYP__.TTF");
+      }
+      @font-face {
+        font-family: Planewalker;
+        src: url("../Fontes/Planewalker.otf");
+      }
+      h1 {
+        color: blue;
+        font-size: 50px;
+        font-family: HarryPotter; /* define tipo de fonte, não qual fonte será utilizada em si */
+        font-style: italic;
+        font-weight: bolder;
+      }
+      div {
+        width: 350px;
+        height: 350px;
+        background: rgba(209, 206, 206, 0.295);
+      }
+      p {
+        font-family: Planewalker;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>RGBA</h1>
+      <p>
+        RGBA define além das cores do espectro RGB, mas também o nivel de
+        opacidade por porcentagem
+      </p>
+    </div>
+    <div>
+      <h1>!important</h1>
+      <p>
+        Hierarquia é definida pelo !important, a propriedade que tiver este
+        atributo será priorizada para a renderização
+      </p>
+    </div>
+  </body>
+</html>

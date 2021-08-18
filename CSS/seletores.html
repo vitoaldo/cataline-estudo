@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background: green;
+      margin: 20px;
+    }
+    .amarelo {
+      background: yellow;
+    }
+    #vermelho {
+      background: red;
+    }
+    .bordada {
+      border: 3px solid black;
+    }
+    div.amarelo.bordada {
+      border-radius: 50px;
+    }
+    /* div:first-of-type {
+      background: black;
+    }
+    div:last-of-type {
+      background: blue;
+    } */
+    /* div:nth-child(1) {
+      background: black;
+    } */
+    /* div:nth-child(3) {
+      background: blue;
+    } */
+  </style>
+  <body>
+    <div class="amarelo"></div>
+    <!-- O id NÃO pode começar com numero, letra maíuscula e nem deve conter espaço. Lembrando, id é único! Para uso de maneira mais geral, o correto é usar class -->
+    <div id="vermelho"></div>
+    <div class="amarelo bordada"></div>
+    <div style="background: blue" id="vermelho" class="amarelo"></div>
+    <!-- style dentro da tag > id > class > elementos da própria tag -->
+  </body>
+</html>
